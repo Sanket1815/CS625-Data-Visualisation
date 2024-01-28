@@ -1,10 +1,10 @@
 # HW 1 - CS 625, Spring 2024
 
-Sanket Nadkarni
+**Sanket Nadkarni**
 
 ## Git, GitHub
 
-# Url - https://github.com/Sanket1815/CS625-Data-Visualisation.git
+https://github.com/Sanket1815/CS625-Data-Visualisation.git
 
 The push command in Git is used to send local changes that we have made to a our repository
 
