@@ -35,6 +35,10 @@ This simplicity and power have contributed to Node.js's widespread popularity. F
 
 ![Home](/assests/images/home.jpg)
 
+## Tableau
+
+![Tableau](/assests/images/Tableau-1.png)
+
 ## Google Colab
 
 https://colab.research.google.com/drive/1lo56M_rl-OYRFgNANpkwQaxfchhaxsfd?usp=sharing
