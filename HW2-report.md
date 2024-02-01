@@ -10,7 +10,7 @@ Due: January 31, 2024
 - Remove row/columns:-
 
   - Removed all blank rows/columns by running command :-
-  - `if(isBlank(cells['Job Title'].value), 'remove', if(cells['Job Title'].value == '-1', 'remove', value))`
+  - `if(isBlank(cells['columnName'].value), 'remove', if(cells['columnName'].value == '-1', 'remove', value))`
 
 - Editing the values in the column:-
   To get the highest value for column size:-
