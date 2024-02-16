@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='matches-csv' inline='true' name='federated.15y4h9j0voy6sc1b8gbdg1y8mtfz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='matches-csv' name='textscan.1s62qa10u5z12s1ctkcps1fhg8px'>
+            <connection class='textscan' directory='C:/Users/snadk/Downloads' filename='matches-csv.tsv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1s62qa10u5z12s1ctkcps1fhg8px' name='matches-csv.tsv' table='[matches-csv#tsv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='string' name='city' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='string' name='team1' ordinal='4' />
+            <column datatype='string' name='team2' ordinal='5' />
+            <column datatype='string' name='toss_winner' ordinal='6' />
+            <column datatype='string' name='toss_decision' ordinal='7' />
+            <column datatype='string' name='result' ordinal='8' />
+            <column datatype='integer' name='dl_applied' ordinal='9' />
+            <column datatype='string' name='winner' ordinal='10' />
+            <column datatype='integer' name='win_by_runs' ordinal='11' />
+            <column datatype='integer' name='win_by_wickets' ordinal='12' />
+            <column datatype='string' name='player_of_match' ordinal='13' />
+            <column datatype='string' name='venue' ordinal='14' />
+            <column datatype='string' name='umpire1' ordinal='15' />
+            <column datatype='string' name='umpire2' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1s62qa10u5z12s1ctkcps1fhg8px' name='matches-csv.tsv' table='[matches-csv#tsv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='string' name='city' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='string' name='team1' ordinal='4' />
+            <column datatype='string' name='team2' ordinal='5' />
+            <column datatype='string' name='toss_winner' ordinal='6' />
+            <column datatype='string' name='toss_decision' ordinal='7' />
+            <column datatype='string' name='result' ordinal='8' />
+            <column datatype='integer' name='dl_applied' ordinal='9' />
+            <column datatype='string' name='winner' ordinal='10' />
+            <column datatype='integer' name='win_by_runs' ordinal='11' />
+            <column datatype='integer' name='win_by_wickets' ordinal='12' />
+            <column datatype='string' name='player_of_match' ordinal='13' />
+            <column datatype='string' name='venue' ordinal='14' />
+            <column datatype='string' name='umpire1' ordinal='15' />
+            <column datatype='string' name='umpire2' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team1]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>team1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team2]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>team2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_winner]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>toss_winner</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_decision]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>toss_decision</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>result</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dl_applied</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dl_applied]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>dl_applied</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_runs]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>win_by_runs</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_wickets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_wickets]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>win_by_wickets</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_of_match]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>player_of_match</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire1]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>umpire1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire2]</local-name>
+            <parent-name>[matches-csv.tsv]</parent-name>
+            <remote-alias>umpire2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Toss winner match winner' datatype='string' name='[Calculation_229120686814380032]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [toss_winner] = [winner] THEN &apos;Yes&apos; ELSE &apos;No&apos; END' />
+      </column>
+      <column caption='Toss_won_match' datatype='string' name='[Calculation_229120686816141313]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [toss_winner] = [winner] THEN &apos;True&apos; ELSE &apos;False&apos; END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='matches-csv.tsv' datatype='table' name='[__tableau_internal_object_id__].[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dl Applied' datatype='integer' name='[dl_applied]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+      <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+      <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+      <column caption='Team2' datatype='string' name='[team2]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+      <column caption='Umpire1' datatype='string' name='[umpire1]' role='dimension' type='nominal' />
+      <column caption='Umpire2' datatype='string' name='[umpire2]' role='dimension' type='nominal' />
+      <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+      <column caption='Win By Runs' datatype='integer' name='[win_by_runs]' role='measure' type='quantitative' />
+      <column caption='Win By Wickets' datatype='integer' name='[win_by_wickets]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:toss_decision:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;field&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;bat&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='matches-csv.tsv' id='matches-csv.tsv_10D14401A9A14648B076B38366DBE786'>
+            <properties context=''>
+              <relation connection='textscan.1s62qa10u5z12s1ctkcps1fhg8px' name='matches-csv.tsv' table='[matches-csv#tsv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='Season' ordinal='1' />
+                  <column datatype='string' name='city' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='string' name='team1' ordinal='4' />
+                  <column datatype='string' name='team2' ordinal='5' />
+                  <column datatype='string' name='toss_winner' ordinal='6' />
+                  <column datatype='string' name='toss_decision' ordinal='7' />
+                  <column datatype='string' name='result' ordinal='8' />
+                  <column datatype='integer' name='dl_applied' ordinal='9' />
+                  <column datatype='string' name='winner' ordinal='10' />
+                  <column datatype='integer' name='win_by_runs' ordinal='11' />
+                  <column datatype='integer' name='win_by_wickets' ordinal='12' />
+                  <column datatype='string' name='player_of_match' ordinal='13' />
+                  <column datatype='string' name='venue' ordinal='14' />
+                  <column datatype='string' name='umpire1' ordinal='15' />
+                  <column datatype='string' name='umpire2' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Toss Advantage: Do Winners of the Toss Also Win the Match?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches-csv' name='federated.15y4h9j0voy6sc1b8gbdg1y8mtfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15y4h9j0voy6sc1b8gbdg1y8mtfz'>
+            <column caption='Toss_won_match' datatype='string' name='[Calculation_229120686816141313]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [toss_winner] = [winner] THEN &apos;True&apos; ELSE &apos;False&apos; END' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='matches-csv.tsv' datatype='integer' name='[__tableau_internal_object_id__].[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:matches-csv.tsv_10D14401A9A14648B076B38366DBE786:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='matches-csv.tsv' datatype='table' name='[__tableau_internal_object_id__].[matches-csv.tsv_10D14401A9A14648B076B38366DBE786]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_229120686816141313]' derivation='None' name='[none:Calculation_229120686816141313:nk]' pivot='key' type='nominal' />
+            <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+            <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+            <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[__tableau_internal_object_id__].[cnt:matches-csv.tsv_10D14401A9A14648B076B38366DBE786:qk]' scope='rows' value='Number of Matches' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:toss_decision:nk]' value='187' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:toss_decision:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[__tableau_internal_object_id__].[cnt:matches-csv.tsv_10D14401A9A14648B076B38366DBE786:qk]</rows>
+        <cols>([federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:Calculation_229120686816141313:nk] / [federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:toss_decision:nk])</cols>
+      </table>
+      <simple-id uuid='{A27DA2AC-14A5-4E41-9EAE-9EC4296E00F5}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:toss_decision:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:Calculation_229120686814380032:nk]</field>
+            <field>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:Calculation_229120686816141313:nk]</field>
+            <field>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:Season:nk]</field>
+            <field>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:toss_decision:nk]</field>
+            <field>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:toss_winner:nk]</field>
+            <field>[federated.15y4h9j0voy6sc1b8gbdg1y8mtfz].[none:winner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{316A6BDB-885F-4425-B1DC-B129E33221E7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAATW0lEQVR4nO3dSXMb+XnH8W+jse8ESXDfSYmURsssmok9Htsap8aXqaQq5WPeSV5Fzinf
+      ckgqPqQqlYyd1IwTu2xnPLYkipIocd8JEAsBEDvQ3TlI4lgRIAsgCIDs53MimgD6Qf/xQ6O7
+      H3QrhmEYCGFSlk4XIEQntTwA2Wy21U8pxLlpeQA0TWv1U154W2vLfPHFF+xFk+c/M8Pg+Pj4
+      9GY2tsNeMv/KXRYfPMAAMokIv/j5Fywur73xKbeeLvHr3/6Ww3j6tf+tP3pE4XReu2xFX79P
+      N7N2ugAzmJxd4P7SM/o98NWXXxEMD5OP79AzMsdJdAt33xg3F2YBeLZ0H4fXSTRlwapnKZyk
+      0Ox+rFoWvVRi7s4PGQw4AfjyP/+DUgU8dpi6eYe9Z49xB3v55Zdf8pOf/A2rq+uEbAWWMy6+
+      89EHTPb50MsnpAs6CuDvHcQol5ibm+Lr3/wPec1G2G8nXbTQ41dIZDTuvP8uW8vr3Pzrz/nl
+      v/4bcxNDxE6qTA8H2U8UcVRKVDeWiRykuTLiJ5kvsv7oD/h7B8kl9ilW4Qef/iUuW3d+2+7O
+      qi6p6OZTgpPX2Vl/ht1uIxI9wmG3EYlEebknotcNX/5ulUzsKSfpJPGSl/zRPrvxFKO9diLH
+      xdPny+TKOK0qE0Melp9uksnn2dhLMjU1jZbYpWfqOuEeL5NX5ommSwCsLz9hZmHhlbqMcp5I
+      WkMpJCkrKvGjAyxWF6mjKPnK8zW6goJCla//948owOLjVT748D2yiRgWh5NcKs5xMsnKo3t4
+      Rq6zv/WM45MiTkuFYrnajsXbFFkDtMnCwgIjM+McfnOPd979gGLyAJvNh9MoELIpPHq4SFXT
+      GR0b4eqkRthnEJq6zeHKPTTHNaZVnZ6gg0I6wf37m1gdHuYXFnDarAR9VmY9cBQ1GO8bwshG
+      cQ5PUV5/Rqmvn7FeLwoqGAaHqSLfu+k6rWt2fgG708vV8R6y1TD9AQe53j5cDgfB3hB2q4XJ
+      +Rkef/013/n+Z2Qi66RLVm7Mj7N4b5HRqwt4rDaCwR56Bkb5i6GrRLdXWLh5B6OSx2mz4LSp
+      HVzyb6a0ejdoOp0mEAi08ikvP8OgXCljGGC12lDV+itmTatSrWooigWbzYai/PmnL5VKOBwO
+      DEMneZyiNxRqYfEXm6wBXigW8mg6uD1uFEDXNcCCxfIW77CzUhTsdsdb3VVVrahqY8NWLBZx
+      OBwoiuUCvfkNCvk8mm7gdLmxvuFD4SwkAC88efiQ8NgkaCWix3lCLp28JUg5EyE8MkkmdoA7
+      NIjf/XZvVHF2mXiEp7txbr1zDa1SRLW78LtUioaN5OEuocEx3I6zvYUlAC9UK2XyhRKqVmB/
+      YxtlagzVliZ+XMCm7rK+F8V5lOHD9250ulSTUBgYGiJRtlI5iZPWXVTjO7jDHh7vZSnn88Qy
+      Jd69MX+mucheoBdC4WGuzEyQzmRwORxgUbFZnThsBtliBbfTwfDQYKfLNBkFq1XFYnUwGO7F
+      ZjF4trGLx+PD6bAxNDhw9jm83Ag2DINWbA+fnJzg8/nO/DyidWRM6jv9CpTL5dB1/cxPWCgU
+      UN5m14RoGxmT+k4D4PV6W/KEhmHg9/tb8lyiNWRM6pNtAGFqEgBhahIAYWoSAGFqDR0Iy6UT
+      bO0d4vL1oheSGHY/AbvOYSzJ6Ow1er1ylFRcLA0FwO0PEfKn0WxV1lcSBAcUNIeNm7fmWVuL
+      EZweQtd1qtXubX81IxmT+hoKQGJ/k3TZykS4j1gojtOiUa3C4f4hNk8PqqpisViwWqXDoptc
+      9jHJ5Er89N/vNfXYhpaKp6ePUuqEclln/uoMxaqFoNdJLJliqC/YVAFCnFWxXOW/H2w39diG
+      AuDy+BnxfHtA5eXPKsL9fU3NXIhOk71AwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQaCoBh
+      6GSzJ1Q1HQydYqmEoWtkc/mW/JxSiHZr6EBY/iRFPJkmX4rT77PwdCfBWK+bqqHhCIwxNiC/
+      OhIXS4NHgn2U9g4ZHBrk0aOnGIZBvurl2vwEq2txtD6PNF51ocs+Jmc5I3lDATjcXCVT0ghU
+      4b13b7G5tU3ArbL4YJmh6QVphutSl31MVLX5c482tFRGZq8x8ie3b7xz/fn0iabnL0RHyV4g
+      YWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqDTfDZdJpqppOqZAnly9i6BqZk6w0w4kL
+      qeFmuFTmhL1IAp9TIR5P4fU5US2Qyg8zPiBXhxQXS2PNcG4v+b0DhsdnKGdi+Pr6MUoFpmdG
+      WV1LoPV5L33j1UV02cekfc1w22tkywbFYo7VZ+uERybwuZ43ww1LM1zXuuxj0r5muJlvm+EG
+      7949nT481vT8hego2QskTE0CIExNAiBMTQIgTE0CIExNAiBMTQIgTO3yHh05R//81SMW16Od
+      LuM1f/e3n+Bx2TtdxoXSUAAqxTyb2zuEhycoZY6oqh76/Q42dqPMzE5jU82xQtk9yvB4M9bp
+      Ml5T1fVOl3DhNBQAHYWxsWE2d7dRNBtWYqylYHoszNZunNmJfgDpDO0Qw6i/7C/zmBg0/9oa
+      CoChldjYjnLl6jib6wlsaJQBh8MO2gmGYWAYBvol/yTq1jeTrus1l3296ZfFWV5bQwHIHKfQ
+      DY3EcRm7JUdV9TAecPDwyTZz8wtYLBYURTlTc9JFoChKp0uoSVUtNZe9xVJ7+mWhWtrUDBce
+      nSQ8+uLGn1wW9VYo3HQBQnSSObZahahDAiBMTQIgTE0CIExNAiBMTQIgTE0CIExNAiBMraEA
+      VIpZvrm3COg8WXrA0pMVkkf7LC4ukilUzqlEIc5PQ0eCLVYnbpcdMCjkS+hWhVhK4eaNWdY2
+      jvBMDV76kzBB9/YCaVWt5rK/7GPSthNjqVYrFgXQiqiuEG4jR7lSJps5QbE7THNirK7tBbKq
+      NZf9ZR+Ttp0YK5tKYOgG+7ECw31OqtYQgz1etvYiTE8ONF2EEJ3SUAC8wV6uBXtfmz49JddJ
+      FReT7AUSpiYBEKYmARCmJgEQpiYBEKZWNwDlcpl8NkOxfHkPoAhRdzfo/ft/JBHdxz8ww/c+
+      eredNQnRNnUD4LPr2CYXCARe3+8vxGVR9ytQLJEmm02SPDo8nVbMpfnyV78BDB4v3mN1c5e9
+      jRUW7/+Bg0S2HfUK0VJ11wAD4TDf3Fvkw7ufn05zegIMh0NAnlgsh6+qUPF6uXX7OqtrcbSg
+      6w2NVwZG/vgcXsIZqTYUh6+hh0gzXHc5l2a4ZCKGx99DtVI+nZZNJdjZ2cEf7MMfsGEADlVn
+      8cFj+sfn39gMZ5RzZH/6adOFnhfrzI9w/dXfN/QYaYbrLi1vhttdf8LKdpTR0VEc9m/v4g32
+      8uPPfgzAyGB/0zMVolvUDMDA6BTvv68xPjZENJFvd01CtE3NANgdLlLRHSKH+/QMzbS7JiHa
+      pu4Xw7l33iUU6uU42YUbrkK0SM3doCfxfX72s5/xi1/8nNiJ/NZXXF41A+DrG+HD29dJJ+Pk
+      SxIAcXnVPRCmugP4PTaKJ5l21iNEW9XcBjiOR/C4vUxffZf+4fF21yRE29RcA+xvrfFwaYmD
+      o2S76xGirWoG4Mo7t5keG6GUTXAQe3Uv0PHxi9tGlaNYAr1aYmNrB71L2wOEeJOaAfj9r/6L
+      Jxs7VDSwW789zFzMpVlaXgFgb2uTzd0D1lbW6AvY2NyTtYW4eGpuA3x093M+wsBme/Wiy05P
+      gP6QH72cZWXrgEqlgmdkDF/ATzSRQtO0+o1XZ2hYOk+GYTTcKCbNcN2l5c1wD37/a5ZWNpmd
+      mWNsZp6pkecXwcumEiQTSQ6D/Xx69wfs7u7hsSs8XFpjcu7am5vh9O68SqGiKA03ikkzXHdp
+      eTPcB9/9IS5fkECwF4/PezrdG+zl448/Pr09Nvb8kpGhgZGmCxCik2oGQFEsxBPHTE6Ocf/R
+      Mp989/121yXaQIssoR0td7qM11hnf4TF3Z5fItZdL16dGufrb5a4dec7bSlEtF91/SvKv/+H
+      TpfxGjW8AJ0OQCJb4tNP73bt910hWqFuK0R86wn/+E//wuO13XbWI0Rb1V0DzCxcJ6w76fV7
+      691FiAuvbgA292MYlRPizkEGwnfaWZMQbVP3K9CV8QHWdtPceu92O+sRoq3qBuDJygYfvX+N
+      R0vdt5tMiFapGYD1J/fYjyZZWd3E4XKdTi/m0vz6d98AsPbsMffuL3Gwt8ni/XvET4rtqViI
+      Fqq5DTBz7T0OIxEyRfB53afTnZ4AfT3PN4pHhkco7h6RzVe5dXuB1bU4Pe4h6QXqoEZ7gXRd
+      b0dZDdM0DaOBMTmXE2OVS2Xg1Wa4crFAJpPhJJdl+dEy01fmSSci7GzvYveGpReowxrtBdIs
+      3Xl2fFVVURsYk3O5SqTqcDE5OEbPn+4GNQwmJybRdYPpmRkMw2Bqdo5UOktPMNB0EUJ0St0A
+      9PUE2N/fx+bpIdz7/M1td7kZcL34SuT79nyaoZ7g+VYpxDmpuw50e3wE/W4ikaN21iNEW9UN
+      QDIeZXcvQjDU0856hGirurtBtyMp8ifHHB7JmeHE5VVzG6C3f5C+2Am2sWnuvHej3TUJ0TY1
+      1wC7W2tEjuIc7m7wbHO/3TUJ0TY11wA37nyfG9L/JkygO4+ECNEmDQegWHze81Ms5CgUyxi6
+      Rjqd6dr2ACHepKEegGIuze/uPebuJx+x8nQVw2LF61JRVYV0YYjxQTkaLC6WhgLg9AQY7O8B
+      Crg8AzjJkgbemR5ldS2B1u+VZrgOkma4xjUUgGwqQeQwgj/YR6lwQF71MBCws/hgmeEZOTFW
+      p0kzXOMaGnlvsJe7d+8Cr14lcnCs6fkL0VHd+REgRJtIAISpSQCEqUkAhKlJAISpSQCEqUkA
+      hKlJAISpNRkAg72tdbb2DinlMzx9tkpF687D6kK8SZMXjqqSSOWxKDkK2RTT42G2duPMTjw/
+      OlyrV6Zb+2cMjK6trVGGUX851x6T866oOYbR2JgYNP9CmguAVkHXQbGAhordbgcte1p4rSYr
+      Q+/Wpd1EU1iXvnN0Xa/5WupN79bgG3rt91D9+zf/7aO5AFiceJwKmtXNaJ+Ph0+2mZtfwGKx
+      oChKzeYkQ+3OzY169f6ZB51PMWekqpaar8ViqTe9O1+Hpc7rqHt/S5ua4U4pFq5ce+f05q1Q
+      uOkChOik7vxYFqJNJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC1JoOQDy6z8b2PqVcmuWn
+      K5SlGU5cQE02w1V49nSdoakZtncPmZkIs70TY3by+RHhmn0c3dp3QmN9J92sXh8W1B6TLh2S
+      N76OevdvVpMB0PD4+1ELKTK6DZvNhqGXTpvhLlI3KDRTW3e+FkOvv+xrvsYuHZOGu0HbHwAn
+      vUErec3GbNjDw+UdrszPv7kZTuvOzQ2FJprhuFhNZPXGpNqtzXB1mvfedP9mNRkAGJuaO/37
+      Vk//G+4pRPfqzo9lIdpEAiBMTQIgTE0CIExNAiBMTQIgTE0CIExNAiBMrekAFLNJ/ri4TDKy
+      x+LiIql8uZV1CdEWzR0JNnR29mM4bQqJTIGbN+ZY24jhmxqUq0R2kFwlsnFNBUCvFMgXSkSP
+      jhgZHCB9fIzF4ZSrRHaYXCWycU0FwGL3cPv2TXK5PC6HlZ2DI6bGQk0XIUSnNN0MB+DxuAGY
+      HB9tSTFCtFt3rgOFaBMJgDA1CYAwNQmAMDUJgDA1CYAwNQmAMLWmjwMYxvNLkykv/lYUpWuP
+      kApRT9MB2FhdJp4sEO73cnKSpXf0KiN93lbWJsS5azoAoZ4eqhY3Va3CzVvXWF2Lo/W4pBmu
+      g6QZrnFNnxrx/v0lRiZncdgMFh88ITwxL81wHSbNcI1rMgA2Pv3ss9Nb403PXojO6s6PACHa
+      RAIgTE0CIExNAiBMTQIgTO3MAdCrJTY2d9C7dN+4EG9y5gCsrazRF7SxuZdoRT1CtNWZA6BY
+      7fgCfvRSqRX1CNFWZw5Ab8DNw6U1wsPhVtQjRFud6awQAKGBEUIDI62oRYi2U4wXnV3ZbPZM
+      TUUv5fN53G537X9W8md+/pZTVLA6av7rZZv3/1ep6lS7sJHMZa/9eVZ3TLQK6JVzrqoJVico
+      r385qTceBlAsN9bQeDqrl394va1rZQ4EAvX+07J5nLeXHZ/d2vjWqPpjcnHoun6mK0LWcmGO
+      AxTzJ+SLr35a5fLnt0Y5rx/4HOxucnQUo1D+dm17FIsBkEsmuUi7EpLJ41cnGAa5fOHc5tfq
+      Nz+0YBugXUr5DKtb6/QNDqJWsmTKkIruMjw1z9TYUKfLeytatcjjJyvMX5lDsdvZXtvDHewn
+      m0lSyqbY34xw/dNPqP2FrPvsb2+ws21lZm6Kna1t/IEgj58+4+PvfR+fy97p8t7KhQkAisrk
+      zBzx6B7lfJpIusTY4CATo4OdruytqVYnoxPj+OwKh9EDEpkiw97na7VC1bgwQX7J4w8RcpTZ
+      PEhglIvEs2XGxyfwOm2dLu2tXZgAuNwe9je2GRydIH1kYPc7GOvzs70XuVBvnHB/GKddZbTH
+      gWps4vF4CHicaKUcieMCPZ0usAEuO0QKdqYH/OzrJQL9vRRTR2SLlQuzBvg/jHQKBvN05xQA
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
