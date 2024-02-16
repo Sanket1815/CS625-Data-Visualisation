@@ -1,0 +1,1240 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Indian startups funding in 2021' inline='true' name='federated.00z0yyv0rlrsly1e9zhsq07tas3v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Indian startups funding in 2021' name='textscan.0jww09s1yae83d1f1vdga0z1ue2b'>
+            <connection class='textscan' directory='C:/Users/snadk/Downloads' filename='Indian startups funding in 2021.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0jww09s1yae83d1f1vdga0z1ue2b' name='Indian startups funding in 2021.csv' table='[Indian startups funding in 2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Company/Brand' ordinal='0' />
+            <column datatype='integer' name='Founded' ordinal='1' />
+            <column datatype='string' name='Headquarters' ordinal='2' />
+            <column datatype='string' name='Sector' ordinal='3' />
+            <column datatype='string' name='What it does' ordinal='4' />
+            <column datatype='string' name='Founder/s' ordinal='5' />
+            <column datatype='string' name='Investor/s' ordinal='6' />
+            <column datatype='string' name='Amount(in dollars)' ordinal='7' />
+            <column datatype='string' name='Stage' ordinal='8' />
+            <column datatype='integer' name='Month' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0jww09s1yae83d1f1vdga0z1ue2b' name='Indian startups funding in 2021.csv' table='[Indian startups funding in 2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Company/Brand' ordinal='0' />
+            <column datatype='integer' name='Founded' ordinal='1' />
+            <column datatype='string' name='Headquarters' ordinal='2' />
+            <column datatype='string' name='Sector' ordinal='3' />
+            <column datatype='string' name='What it does' ordinal='4' />
+            <column datatype='string' name='Founder/s' ordinal='5' />
+            <column datatype='string' name='Investor/s' ordinal='6' />
+            <column datatype='string' name='Amount(in dollars)' ordinal='7' />
+            <column datatype='string' name='Stage' ordinal='8' />
+            <column datatype='integer' name='Month' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company/Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company/Brand]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Company/Brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Founded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Founded]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Founded</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Headquarters</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Headquarters]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Headquarters</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sector]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Sector</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>What it does</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[What it does]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>What it does</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Founder/s</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Founder/s]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Founder/s</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investor/s</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Investor/s]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Investor/s</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount(in dollars)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Amount(in dollars)]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Amount(in dollars)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Indian startups funding in 2021.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Sector]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Indian startups funding in 2021.csv' datatype='table' name='[__tableau_internal_object_id__].[Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26]' role='measure' type='quantitative' />
+      <column-instance column='[Sector]' derivation='None' name='[none:Sector:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sector:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Apparel &amp; Fashion&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Beauty products&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Company-as-a-Service&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cultural&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Education Management&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fintech&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HealthTech&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Insurance&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Management Consulting&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;NFT Marketplace&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rental space&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Spiritual&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Venture Capital &amp; Private Equity&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Advertisement&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;B2B Manufacturing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CleanTech&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Consumer software&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Design&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fashion&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gaming&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;HRTech&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Job discovery platform&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Milk startup&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Product studio&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Social Media&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Textiles&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AI Chatbot&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;B2B startup&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Commerce&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cosmetics&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;E-commerce&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Femtech&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Health care&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Information Technology&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lifestyle&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Recruitment&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Software company&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Translation &amp; Localization&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Automation&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BioTechnology&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Computer software&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;D2C jewellery&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Environmental Services&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Food &amp; Beverages&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Helathcare&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Internet&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Marketing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Online Media&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SaaS startup&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SportsTech&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Water purification&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AR startup&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Beverages&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Computer &amp; Network Security&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;D2C&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Electronics&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fishery&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Healthtech&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Insuretech&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Manchester, Greater Manchester&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nutrition&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Retail&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Venture capitalist&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AI company&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;B2B Travel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Commercial Real Estate&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CRM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;E-learning&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Finance&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Health, Wellness &amp; Fitness&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Information Technology &amp; Services&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Location Analytics&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nanotechnology&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Renewable Energy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Software Startup&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Transportation&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;B2B E-commerce&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Capital Markets&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Consumer service&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Defense &amp; Space&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fantasy sports&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Furniture&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Housing Marketplace&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;IT company&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Media&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pollution control equiptment&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Social community&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Telecommuncation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Advisory firm&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;B2B Marketplace&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Clothing&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Content commerce&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Digital mortgage&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fashion &amp; Lifestyle&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hauz Khas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Human Resources&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Legal Services&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MLOps platform&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Professional Training &amp; Coaching&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Social network&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tobacco&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Aviation &amp; Aerospace&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Business Supplies &amp; Equipment&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Consumer Goods&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Deeptech&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Eyewear&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Food Production&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hospital &amp; Health Care&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;IoT platform&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mechanical &amp; Industrial Engineering&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pet care&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Social audio&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tech startup&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AI startup&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Banking&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Community&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Crypto&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;EdTech&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Financial Services&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HealthCare&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Innovation Management&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Logistics&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Networking&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Renewables &amp; Environment&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Solar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vehicle repair startup&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Automobile&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Blockchain&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Construction&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;D2C startup&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Equity Management&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Food and Beverages&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Higher Education&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Investment Banking&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Marketing &amp; Advertising&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Online storytelling&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sales and Distribution&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Staffing &amp; Recruiting&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Wholesale&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Automotive&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Blockchain startup&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Consulting&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dating&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;EV&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Food delivery&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Home Decor&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Investment Management&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MarTech&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;OTT&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Skill development&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Supply chain platform&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Wine &amp; Spirits&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;B2B&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cannabis startup&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Consumer goods&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DeepTech&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Facilities Services&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Foootwear&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hospitality&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;IT&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mechanical Or Industrial Engineering&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Podcast&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Social commerce&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tech Startup&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;B2B Ecommerce&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Celebrity Engagement&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Consumer Services&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Delivery service&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Farming&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Furniture Rental&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;HR Tech&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;IT startup&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Merchandise&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Primary Business is Development and Manufacturing of Novel Healthcare Products in Effervescent forms using imported propriety ingredients.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Social media&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Telecommunications&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Arts &amp; Crafts&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bike Rental&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Computer Games&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;D2C Business&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fitness&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Heathcare&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;InsureTech&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manufacturing startup&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Oil &amp; Energy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Robotics&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;sports&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Veterinary&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Analytics&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Battery&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Community platform&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cryptocurrency&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Education&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;FinTech&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Healthcare&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Innovation management&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Logistics &amp; Supply Chain&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;NFT&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rental&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SpaceTech&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Venture Capital&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aeorspace&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;B2B marketplace&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cloud kitchen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Content creation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Digital platform&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fashion and lifestyle&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Healtcare&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Industrial Automation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Legaltech&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mobility&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Social platform&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tourism&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Aviation&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Blogging&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Consumer Electronics&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Deep Tech&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;EV startup&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Food Industry&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Home services&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;IoT&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Matrimony&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Personal Care&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sochcast is an Audio experiences company that give the listener and creators an Immersive Audio experience&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;TaaS startup&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Augmented reality&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Biotechnology&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Computer Software&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;D2C Fashion&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Environmental service&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Food&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HeathTech&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Interior Design&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Maritime&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Oil and Energy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SaaS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sports startup&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Video communication&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AgriTech&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;B2B service&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Co-working&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Content publishing&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Drone&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;FemTech&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Health&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Information Services&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;LegalTech&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MoEVing is India&apos;s only Electric Mobility focused Technology Platform with a vision to accelerate EV adoption in India.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Real estate&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Software&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Trading platform&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Indian startups funding in 2021.csv' id='Indian startups funding in 2021.csv_B40167A499F24DBEA13B2BD7270CCD26'>
+            <properties context=''>
+              <relation connection='textscan.0jww09s1yae83d1f1vdga0z1ue2b' name='Indian startups funding in 2021.csv' table='[Indian startups funding in 2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Company/Brand' ordinal='0' />
+                  <column datatype='integer' name='Founded' ordinal='1' />
+                  <column datatype='string' name='Headquarters' ordinal='2' />
+                  <column datatype='string' name='Sector' ordinal='3' />
+                  <column datatype='string' name='What it does' ordinal='4' />
+                  <column datatype='string' name='Founder/s' ordinal='5' />
+                  <column datatype='string' name='Investor/s' ordinal='6' />
+                  <column datatype='string' name='Amount(in dollars)' ordinal='7' />
+                  <column datatype='string' name='Stage' ordinal='8' />
+                  <column datatype='integer' name='Month' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Monthly Funding Trends for Computer Software Startups in 2021</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indian startups funding in 2021' name='federated.00z0yyv0rlrsly1e9zhsq07tas3v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00z0yyv0rlrsly1e9zhsq07tas3v'>
+            <column datatype='string' name='[Amount(in dollars)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Sector]' role='dimension' type='nominal' />
+            <column-instance column='[Amount(in dollars)]' derivation='None' name='[none:Amount(in dollars):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sector]' derivation='None' name='[none:Sector:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Amount(in dollars):nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Amount(in dollars):nk]' />
+              <groupfilter function='member' level='[none:Amount(in dollars):nk]' member='&quot;Undisclosed&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Sector:nk]'>
+            <groupfilter function='member' level='[none:Sector:nk]' member='&quot;Computer Software&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Sector:nk]</column>
+            <column>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Amount(in dollars):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Month:qk]' field-type='quantitative' max='12' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Sector:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Month:qk]</rows>
+        <cols>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Amount(in dollars):nk]</cols>
+      </table>
+      <simple-id uuid='{260B8425-7ADE-40DD-8029-ED865D6C8B9D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Sector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Amount(in dollars):nk]</field>
+            <field>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Investor/s:nk]</field>
+            <field>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Month:qk]</field>
+            <field>[federated.00z0yyv0rlrsly1e9zhsq07tas3v].[none:Sector:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{183180A4-EE7D-4983-A1DF-0B799A322A13}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAW/UlEQVR4nO2dWW9cSXqmn8g9kzspkeImktqrq7rtdnV5A8aAxzAwc+W/1P/EV8ZcDeAb
+      XxoeoAd2l9tVrYUikzuZzGRuzH1fzglfHKVEUdwymavO9wACCSrPOV9GxBvrG3GU1lojCDbF
+      MegABGGQiAAEWyMCsAnp2Ak/be62dU0ul6FpaML7m+zu7XJ0lvniMzs7wY+/F5KnRBIJdvZP
+      r7yfNuv8+Ic/Mkx9btegAxD6w7t3W8QKDTYmm/znfhJlaFxeL/PjDhLZCouzY8w+eUFoM0g6
+      lwW3j/xZkLU//VvSkVP+5vuXbIZPCb75PQuPn/Mnzx7x/373I8fROI1Sjni2zMq0g6x7jmg4
+      TS0bJVNXeM0CDYcfo1JiaeMlZiFOutxkLjAcRU9aADugTY6Oj6mdh9k/jTD9eANlOGmUchyG
+      YmxMO/nj+yCFSoVI+Iyq4aZaSPPw0TIvnj5GKQdGtUjyPIXh9BEJH5M528Mz94SZcS8HoRhP
+      Z93sR60WQtfKHJ3F2dvdJ3KW4M9/+B63y0EskSTgd1Oq1AecIJ8YDhkKPUU3y/z13/0DqzMO
+      9kMxZmanqD1bQ9PAoxqEz4v877//W4LHIV58+wqXxw9GlfnpACehMD6nxhyf5+WzSet+2mR2
+      dQlX9CdW1p6zOOUhlCzyl9//mqrDz5THT+Y8xqPlNabHPbgcirHxcZxjU8SPorya9g84RT6h
+      7jsNqrXGNE2GfTZV5XLoqalBhzGSGLUSuapidipwr/uobIpE08nDB9Ndiuz+3FsALQzDwOl0
+      duNW3adahf/6A3z7HczMDDoae2IY8J8/wg9/Dq7h6Xi0NQaolfP87vd/AOBgd4uff36L0ZOw
+      uojWcHJs/Tw+sn4K/SeVgkYDzs8HHclntCUAj3+CB9PjAKysrOD2elA9CauLlEqQSIBSUCxa
+      vwv9RWuIx8DhgHh8qCqhtgRgNOqUSiVK5TKbm0GWl5aGWwBaw9GRVfjB+nlyDKY50LBsR70O
+      uZz1eyEPtepg47lAewIwGiwtLlGrN1hZXaFWrQ7VosYXZLOQvbR4U6tB9Gww8diVZPJTra81
+      JJKDjecCbY1GvP5xlvxWF4jpIZ9R0RqODj/V/i2UgtApzC+A2z2Y2OyE1pCIf94KJ+Kwuvpl
+      3gyAr3chLJGw+v9X0WxA+OrleqHLlEtf5kOlYo3HhoCvUwCmafX1r6thlIKzM2t6VOgt1006
+      JOL9jeMavk4BnJ1Zff2bME04OelPPHZF608zcBdRyhoXDMFkxNcngEYDTkO39y9bfdHruknC
+      /cnlrq+I6nVrkmLAfH0CCJ9Cs3n3zx/J4ljPiMeur4haawID5usSQLVqdX/uOrugFGTSn+ao
+      he5hNK3V35vyIpO2JiQGyNclgE4WuZSypkulFeguqbTl/7kJw4DzVH/iuYb2vEClPP/2//8D
+      gKOtn9g5HZ4Fjc8sD+1SLFqDMqF7XJz7v47WOGyAtLcQNjbJow9W1tW1dY7Sxkc7tGEYA7VE
+      Ow4OrFq80xiOjjBnZoZicaYnNBqodBq9sND7Z9XrODKZu+VFNotZKoHX2/u4rqAtAVRLeeLx
+      OA8ePqKaihDPwfryPO4PNuiB2aGzGchlrYFVp9RrOBJxWF7pXlzDQrUK7zetnzMzELifr/9W
+      YjHr513yQ2sc6RSsPu5tTNfQ1n4Ao9mgWqvjcrkxjQYmCr8/gEMNcD+AacKbN1Dqwsqi0wU/
+      /DBUfvV7UypZhb81HTk3B9/8orct3c8/Qbl898/7/PCb3/Qunhtoq8p0utyMjY3h9XrwB8YY
+      C1iFf6Ccn0Ox0J17fW0WiUIe3r215tyVsv6lUlDoUnpdRbnUfmXUyTVdYrRngW6zPLSLUhCJ
+      DJVdt2MyaXj37ss1kV7PesXj0K5JXqlP3aY+M9oC6IWf52uwSCQS8P799VPC+TykezD9aJrW
+      bFq7FZJSVks+AGvE6Aqg2byb5aFdlLrZSTrMaG3tddjduflzSsHxcfcLXCHfeYVUq1kTGX1m
+      dAVw2qbloR1Gdf/waQgODu722XK5+1aEWLzzmbgBWSNGUwDVKpxFejeT0Ros5vO9uX+30Rr2
+      99vrurW2h962WntXms37d6vSacvM2EdGUwChk973Fx2O0bBImKbV5Ym24YFq0WhAJNydODLp
+      +7fIhtGbsckNjJ4A7mN5aJdCYeiO8fgMw4Ctrc7TQykIh61p0vsSv4P14S7xxPt7asfoCeDo
+      sH/PGuZTJBoNa44/k75fwTNNq0W9D9309ueyt29m6iKjJYBsFjJfHtHdUyoViEb7+8zbqFXh
+      7RurhepGSxiPt7dye5lkortdxT6e3dS2AIwPgybTMDCMPtaMrZmZfqOUVUN2a7B4X8plePvW
+      Ema3uoGtBcVOCvF12x47RanuC+oGOrBD/ztg8u71z/zxzSZ9k8D5efdqvHZprTkMmkLBqvm7
+      3UVoLUR1YpGoVrpvrSgWLXtEH2jbDr288ACoEJhYxk+JqtZ4e22HrlRwHOzfz+58X8JhzIlJ
+      GNQJ09ksjp1gb1uiwwPM737Z1iXq7MwyPnR5nKTPouiNja7eU0XCOC6tNbQlgFIuTTgcZmJq
+      jkoxQt7hZ0kpHL20QxeLsPXeqoXvY3fuAo6dILx8CXMP+vvgZBJ2dy3x9zINCgUcuZzlGL0L
+      pmnN3fcipnQKnj7tzr1bh6RFvlw7Gu7j0XM5q/APS/+7xfPnsPCoP8+KRuFgvz/PAvAH4Ne/
+      vlvBy+XgzeveCMA04Ze/uv9x9lpb6yTXjFOGdxYodQ6b74av8INVG4fDve2OaW2NO/b3eveM
+      qyiX7r5N8aZTH+6LUtb974NhWBXoDYP04ROA1pY1Nhgc3lVYpawZqU5nTm6j1WQfH/d/0K+U
+      Zam4y4b22059uG8cqVTnq8uNBmxuWl20G2IcLgFobfXT9neHt/Bf5PQU9roca6vJvqK/2jfq
+      dev5N5HugvXhNkzTEkG71OvWVHE+d2saDo8AtLZqvKND2t5QMSiUshaRtre601W7Q5PdF5Sy
+      xH2TMa0b1oe7xJFo84UalTK8fm39vEN8wyEA04S9PWs74qidytBqqrfe38/J2GhYe3dvabL7
+      hmlYXaGrCl+jYVkw+kEmc/d0LRSsmr9+93WSwQvANCG43dsBVa9RyrJpbL7rzFjWarJztzfZ
+      fUMpiEWv3uDSz9dMtVrZm9Da8hC9e9t2JTRYATSbVqHp5WCqX7TeQfbmdXu7oioV65pyaTjT
+      4LL9RGvLqtCvWO9ijUilrAFvB4txgxNAvWYpdphqvfuilGVTePvmbi+AuGhtGNY0OD//fGNQ
+      s9n/jULF4vVbVKNRqwfR4UTEYARQrcKbt9YXG9aMvw/1+idxX5UxWn/qMvV5B1TbtKZ8W9+j
+      fLfBZddjuLw2obU1UL/nImH/BVAqWU1+rfp1Fv4WhmEV8Kvs2+m0NeAdxkW+q8jlPn2PQYzV
+      Lr9QozVj2AV3cMcCKOazFMptngCQy1lN/rDXet1Ca2uK9OIgLha1/jYK6xwXOTq08q2Teflu
+      0HrVqmlaay9dmjHszAvULPFmO4zZqPCrP/tTnNzBC5ROj2bGd4v1jU9vrR9FtIbZ2cFN02oN
+      Dx58MuB1KYbODsF0enCaVfLZAnWt8dxmhzZNHMHt0Wnye8HB/uh3+c7Pre8wqErs4gJhl2Lo
+      TADKzVjAg/It4VMKdZsdulXwB2xnFoTLdHwM8sbzb7oZhyAMBKmSBVsjAhBsjQhAsDUiAMHW
+      iAAEWyMCEGyNCECwNSIAwdaIAARbIwIQbE2HAtCcxyKcJVLY1NspfCV06AUyiMQzODGYn5/r
+      3FAkCAOms7JrGhiNGoZyYBgaxR3s0FoP55tWBFvToR3aic/rxlBunA6FU93BDq2U2KGFoaND
+      Abj4xS9/1eVQBKH/SJUs2BoRgGBrRACCrREBCLZGBCDYGhGAYGtEAIKtEQEItkYEINgaEYBg
+      azoTgNlgd3ubd++2sfFpn8JXQGdeIIebF69eEdzZxaE1GtBaX+8Gbf3dridDC0NLx1b+fDrK
+      +OwjAEzTRGuNeZ3d2TRRWosAhKGjYwFUm06W5idRSn20Qd/4fgCxQwtDSMcCmF9Y6GYcgjAQ
+      rq2Sy5Uqhp1faCHYgmsF8G5rl3/8P/9Mo9HsZzyC0FeuFMC//u73/NP//RcWFx5QLJf7HZMg
+      9I0rxwDTkxP8zV99z//6n/8Dp1MGrsLXS2dvibyCG98SaRjw4+/lVAhh6Lh2FihyvMfJWZKl
+      tWesL8/3MyZB6BtX9m+MZoPDkxDLy8tMTQT6HZMg9I0rBRA+DJLJldjc3CR2nu13TILQN64U
+      wOLKOmDw7Oka6WSyvxEJQh+5ZopHo+tVXr8NsrC01N+IBKGPXDkI9gQmmZufZ2ll49oxQDmf
+      IZGvsr6y2NMABaGXXDvJ78Hg9evXnCXTV/yvweb7IB63u4ehCULvuVYANe3gN3/2S4q5/BX/
+      a+D2BKimYxTFKSGMMNcKYCrg5/32LjNzD674Xw/Li7No/zRj8nIAYYS5svhuvf6RZKGGzxfA
+      5VRXXji/tIosjwmjzpUtwKPFZfw+Ly6HoimWaOEr5koB5HNpcrk8NQOmxsf6HZMg9I2rxwAf
+      7HGNWoVcsdTHcAShv4gbVLA1YvYXbI0IQLA1IgDB1ogABFsjAhBsjQhAsDUdCyC4+Yadg5Nu
+      xiIIfafzs0FrVTzuJqbWaNPEMIzrT4c2TRxayzqAMHR0KIAmT559x9nRPg2l8N52OK5hyOG4
+      wlDSYYl0Ui6cM7m0gre78QhCX+mwBVA8WlnrbiSCMACkTyLYGhGAYGtEAIKtEQEItkYEINga
+      EYBga0QAgq0RAQi2RgQg2BoRgGBrOhZApZDiP/7rbTdjEYS+05kXSJuEIikmxzxorTHFDi2M
+      KB0JwGzWaDTqRKJRnjx9jt8jdmhhNLnXwVjVahWfzwfIwVjCaHKvKrlV+AVhVJE+iWBrRACC
+      rREBCLZGBCDYGhGAYGtEAIKtEQEItkYEINgaEYBga0QAgq3pUACaw90tfvzxZ5rdjUcQ+krH
+      RyNOTk4QTZdxaI0hdmhhROn4dOhCsYbfYVI1FQE5HVoYUTq0Q2vq9TooJx63pSGxQwujSMdd
+      II9HDkYXRh/pkwi2RgQg2BoRgGBrRACCrREBCLZGBCDYGhGAYGtEAIKtEQEItqZjARjNBo2G
+      eEGF0aZjAZyeHPH65zc0uhmNIPSZDr1AMDkxTg0PLrFDCyNMx3bod++2WVhZx1TqowtU7NDC
+      qHGv06EvInZoYRSRKlmwNSIAwdaIAARbIwIQbI0IQLA1IgDB1ogABFsjAhBsjQhAsDUiAMHW
+      dG6HbtSo1sQLKow2nduhD95zFEt3MxZB6Dsd26FXVtc4SlsWaFPs0MKI0qEATI6PjomXFGtL
+      83jEDi2MKGKHFmyNVMmCrREBCLZGBCDYGhGAYGtEAIKtEQEItkYEINiajgWQTcVJpPPdjEUQ
+      +k6HAmgQiWZJn53Km+KFkabjk+E8njF8VGh2fhNBGDgdtgA+lJklrx3I24KFUabjF2U/e/Vd
+      e5eYpuUJEoQh4t5muJYd2jRNHDe5PZs3jxZuvf4WBn19KxmVUgOLwe7Xa61BgeLuedA1N+ig
+      v/ygrxcBDP76TvLA+dvf/va3HT/xAkopcqk4iWyZgFsTDO7gCUyRjByRylfxORoE946ZnJ4m
+      dLBLuQ5mtcD+SYTZuQc4HYpaKc9hOMbc1Dg729s08FDLn3MSTTI94WdnO4jDO0E2cUosXWRu
+      Zuqz5xuNGsG9Qx7MzXJ8sEMiXcTvaLKzf8z0zDTH+ztUmg6a5SyHoSizc3M41Kfr0SZ7u9uM
+      Tc2RiBwRiWeYGvcSDAZx+ydJRUPW93MabO8dMjE1i9vluJDomqP9IMlcGQ8Ndg5OmJmd4XB3
+      m5rpol5McxxJMDM1RnB7G+UZJ+DzfPYdzkKHhM6SjPmc7B8cYDp9ZGIhUvkqXtUguP95Gk5O
+      jH12fToZ5fDohMDEODtbQeraQb2YIXQpDTPxU+KZL9OwlEuxd3CEcvtJRU9IF+t4dO1DGs5w
+      tLeDyz9JInJEqlBjZmris+sBQgd7OAMTRI72KNRMVL3I7lGY2blp9oNbNJWHSi5JKHrO3Ows
+      6kIeGI0S794G0S4PxXSM6HmecZ+D4M4evvFpYqEDsqU6rlZMs3O4PmSiUgqFQfD9FoWawcyU
+      lQYzc9PsbG1hOv2UM3FO42kmxzwEgzvdXQhzevyUClli4TM2Xr4icXZIue5BVYscRM/59uUq
+      e1vbuMfnqeQzxNI5nq5ME4llATCUk0atRDZ+xvTyBvl0jHS+zMKEm+33u6y8/Jbz2CGFisJT
+      L1O99PymYdA0rH3Kq2sbNMtFTuIpvn2xzPbbLXwzS5RyKZKZAmsLE8TPP1/HMJsNlNLUGnWy
+      JYNxR52t4CFrL78hcXZIqebEVStxEE3wzct1wqexSxEoHq8/oVEsEk6k+fbFIps/vWN8/jGF
+      TJJUtsTyjJ/3b7ZYfvEtqXjkizScX3qMVzcwXH7WV5fIpWMf0/Aw9iEN32/jnrDS8PIOi8mZ
+      hyw+HCMZjpKrNnC7nWTyFeYn3Gy/32P1QxoWq1enoX98kqkJP7lcgmrDhy7nOW6l4Zv3+Gfm
+      iUcOqNQ9UClQv3R9JZ8ikcqSy6bAO0O9kCFynuXVxgPe/uEtM6vPyKViZPJVHo65SBc/j6CW
+      S1EyFG63Il/W+I0aB6dRnr18RvR0n7rpxyznCcVTfPtiiVAo+Xke1qtkikXcbjepWJjzbIlk
+      OMTDJ6/InkfIFOvMeGF375j1l990VwBjY2O0ul+GYaBRaG1iao3SGsMwUcphjRm0Bq0xDfNj
+      zREIjOFQyqoJTBPrIxrT1DgcCtMw0PrCPS893+sL4HZaX+lgb5fVZ88/vsGm9VytNfrD37jU
+      VDrcXgJeNyg3c5NeTmPnuJwK0zAvfRcwW7vcPkOzv7vL2vPnOLXGNAyU02Fdr0Fr04rF4cAw
+      Db7sfGrCx/tMLT7GVS8SimV5+uTxpTQ0UI4LaXiJdDxC0Rjj8ZM1/vL7PyERCVvXmyYOx4d8
+      uSENTVPj8/mp12ofP4PWGOaH517IV33F9ZHIGY1akWQqi76Qz4Zh4Ghdr8HU+srne6YW+Ytf
+      f8NZ6PhTjEp/zAPzYkzGl3mI289vvv+BTPyMSCxOpZAinSt9fG4rLZSy8rBrXSAr8w7JF4os
+      Pl7n7OSY5cfPUI08eCdYnZ9m/yTG85cvKKajBKYfMjfhI5wssLG2hENBMhomlc0x9XCJfCLM
+      9PwyE14HqXKT58/WOT3c49HqU9y6Qt0VYNwBTUxqNQOPx0Uhe048mUI7HBSzBSq1BitLDzgI
+      JXj5ixfkEmHGZ+aZGfcQTZdZW5ymUG1Qq1Tw+bw0qkVCkRi1honHYeCdnOPp2jInBwcsPn6K
+      0yhheMZYW5jl4PiMtfUVyuUytWoVn8+HNuvEogkqtQZLC7Mcnp7zzXevSJ+dMPlgkamAi0Su
+      zstXTwgf7LGwsk69WqZWq+H1elFKk4jFKRbLOJxQLJdA+fCoypdpmIoyNv0QmnUMo46h3Lic
+      itR5kmKxiNvjIRw6YXZhiUm/i3TZ4PmzdUIf0tBlVmhcTMO6gcftopTPEE2kWFh8jMMo4AhM
+      s/Jgkv1Q0krDZJSFlSfQyINvEo82MJVBranwuJzMPlxgbm6WuYcLVPMJvJMPmJ8OcBzN8Yvv
+      XpE4PWRmfoUJL6TLBo+mA1SaJpXShzyoldk/PGJheR2/s0FVedlYnufoMMTqxjPMSgZnYJql
+      uQkOTpM8WV+kWK5Sq1bw+XyYRpOjwwPGZx/y4vlzZmZmWH68Suxon7lHjwm4TPJ1xdONFU4O
+      DvlvKpDh+RU+TXoAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
