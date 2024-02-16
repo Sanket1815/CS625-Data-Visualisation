@@ -6,14 +6,14 @@ Due: February 16, 2024
 
 ## Scatter Plot
 
-# Data
+### Data
 
 **Indian startups funding in 2021.csv - Amount, Month and Sector**
 
 - I trimmed down the big list of companies to include only those in the Computer Software sector. This step was important because it let us look closely at patterns and changes in this particular industry, which people who might want to invest in tech companies would find useful.
 - I gathered the investment figures month by month to paint a clear picture of how funding changed over time. This method helps to spot ongoing trends and any regular ups and downs in investments, which can be useful for predicting future trends and making plans for investments.
 
-# Visualization Idioms
+### Visualization Idioms
 
 Idiom: Area Chart
 | Data: Attribute | Data: Attribute Type | Encode: Channel |
@@ -27,7 +27,7 @@ Idiom: Area Chart
   The y-axis shows funding amounts (Quantitative), with larger amounts shown higher up.
   The sector is categorized as 'Computer Software'.
 
-# Charts
+### Charts
 
 ![Monthly Funding Trends for Computer Software Startups in 2021](/assests/images/monthly%20funding%20trends.png)
 Link to Tableau Workbook[Monthly Funding Trends for Computer Software Startups in 2021](./assests/Tableau/Monthly%20Funding%20Trends%20for%20Computer%20Software%20Startups%20in%202021.twb)
