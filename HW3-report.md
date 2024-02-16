@@ -99,8 +99,6 @@ Link to Tableau Workbook [Toss Advantage: Do Winners of the Toss Also Win the Ma
 
 **IPL-Matches. Toss_decision, Toss-winner, winner**
 
-### Visualization Idioms
-
 - A new column Toss_won_match was created to indicate whether the toss-winning team also won the match. This was done by comparing the values in the Toss Winner column with those in the Winner column.
 - Toss_won_match (True or False) determines the grouping on the x-axis.
   Count of Matches is represented by the height of the bars on the y-axis.
@@ -132,12 +130,18 @@ barplot.legend(title='Toss Decision')
 plt.show()
 ```
 
+### Visualization Idioms
+
 Idiom: Grouped Bar Chart
 | Data: Attribute | Data: Attribute Type | Encode: Channel |
 | --- |---| --- |
 | Toss_won_match | Categorical(Nominal) | Horizontal position on a common scale (x-axis) |
 | Count of Matches | quantitative | Vertical position on a common scale (y-axis) |
 | Toss Decision | Categorical(Nominal) | Color hue |
+
+- While pitch conditions are a significant factor in deciding whether to bat or field first, this graph provides a quantitative measure of how often these decisions lead to victories. It helps in assessing whether the advantage of winning the toss is as influential as commonly believed, and if so, under what circumstances.
+- We can analyse whether certain teams are better at capitalizing on the advantage of winning the toss. For example, if a team has a higher success rate when they choose to bat first, it could indicate their strength in setting a target and defending it.
+- Understanding past trends can be crucial in planning for future games
 
 ### Charts
 
