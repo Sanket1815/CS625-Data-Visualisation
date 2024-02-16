@@ -110,7 +110,27 @@ Link to Tableau Workbook [Toss Advantage: Do Winners of the Toss Also Win the Ma
   `df = df.dropna()`
   `df.to_csv('filtered_matches.csv', index=False)`
   `print(df.head())`
-  to remove all the null values
+  to remove all the null values.
+- Here is the logic
+
+```python
+df['toss_won_match'] = df['toss_winner'] == df['winner']
+df['toss_won_match'] = df['toss_won_match'].astype(str)
+toss_outcome_counts = df.groupby(['toss_decision', 'toss_won_match']).size().reset_index(name='count_of_matches')
+toss_outcome_counts.sort_values(by=['toss_won_match', 'toss_decision'], ascending=[False, True], inplace=True)
+plt.figure(figsize=(10, 6))
+barplot = sns.barplot(
+    data=toss_outcome_counts,
+    x='toss_won_match',
+    y='count_of_matches',
+    hue='toss_decision'
+)
+barplot.set_title('Toss Advantage: Do Winners of the Toss Also Win the Match?')
+barplot.set_xlabel('Toss Won Match')
+barplot.set_ylabel('Count of Matches')
+barplot.legend(title='Toss Decision')
+plt.show()
+```
 
 Idiom: Grouped Bar Chart
 | Data: Attribute | Data: Attribute Type | Encode: Channel |
