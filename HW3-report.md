@@ -8,7 +8,7 @@ Due: February 16, 2024
 
 ### Data
 
-**Indian startups funding in 2021.csv - Amount, Month and Sector**
+**Indian startups funding in 2021 - Amount, Month and Sector**
 
 - I trimmed down the big list of companies to include only those in the Computer Software sector. This step was important because it let us look closely at patterns and changes in this particular industry, which people who might want to invest in tech companies would find useful.
 - I gathered the investment figures month by month to paint a clear picture of how funding changed over time. This method helps to spot ongoing trends and any regular ups and downs in investments, which can be useful for predicting future trends and making plans for investments.
@@ -37,7 +37,7 @@ Link to Tableau Workbook[Monthly Funding Trends for Computer Software Startups i
 
 ### Data
 
-**Comparison of Batting Average and Strike Rate for Cricket Batsmen for Top 25 Batsman - Average, Strike rate, Batsman, Total runs**
+**IPL-Most_Runs_Average_Strikrate. Average, Strike rate, Batsman, Total runs**
 
 - I have checked the dataset for any missing or inconsistent values in the average and strikerate columns. And I have removed the null values using OpenRefine too. Where I used this GREL query
   `forEach(columns, c, if(isNull(cells[c].value), return(true), return(false))).some(v, v == true)`
@@ -67,7 +67,7 @@ Link to Tableau workbook [Comparison of Batting Average and Strike Rate for Cric
 
 ### Data
 
-**Toss Advantage: Do Winners of the Toss Also Win the Match?-Toss_decision, Toss-winner, winner**
+**IPL-Matches.Toss_decision, Toss-winner, winner**
 
 - Creating a Calculated Field for Toss and Match Outcome Comparison named Toss_won_match to determine if the toss winner is the same as the match winner using formula-
   `IF [toss_winner] = [winner] THEN 'True' ELSE 'False' END`
@@ -92,3 +92,35 @@ Idiom: Grouped Bar Chart
 ![Toss Advantage: Do Winners of the Toss Also Win the Match?](/assests/images/Toss%20Advantage%20Do%20Winners%20of%20the%20Toss%20Also%20Win%20the%20Match.png)
 
 Link to Tableau Workbook [Toss Advantage: Do Winners of the Toss Also Win the Match?](./assests/Tableau/Toss%20Advantage.twb)
+
+## Bar chart using seaborn
+
+### Data
+
+**IPL-Matches. Toss_decision, Toss-winner, winner**
+
+### Visualization Idioms
+
+- A new column Toss_won_match was created to indicate whether the toss-winning team also won the match. This was done by comparing the values in the Toss Winner column with those in the Winner column.
+- Toss_won_match (True or False) determines the grouping on the x-axis.
+  Count of Matches is represented by the height of the bars on the y-axis.
+  Toss Decision (bat or field) is represented by the color of the bars.
+- For Removing all the null values I used
+  `df = pd.read_csv('matches.csv')`
+  `df = df.dropna()`
+  `df.to_csv('filtered_matches.csv', index=False)`
+  `print(df.head())`
+  to remove all the null values
+
+Idiom: Grouped Bar Chart
+| Data: Attribute | Data: Attribute Type | Encode: Channel |
+| --- |---| --- |
+| Toss_won_match | Categorical(Nominal) | Horizontal position on a common scale (x-axis) |
+| Count of Matches | quantitative | Vertical position on a common scale (y-axis) |
+| Toss Decision | Categorical(Nominal) | Color hue |
+
+### Charts
+
+![Toss Advantage: Do Winners of the Toss Also Win the Match?](/assests/images/Toss_Advantages_Seaborn.png)
+
+Link to Google Colab [Toss Advantage: Do Winners of the Toss Also Win the Match?](https://colab.research.google.com/drive/183yEeEDDaRDKa1WnVrkC_aBWRV-ZdqMj?usp=sharing)
