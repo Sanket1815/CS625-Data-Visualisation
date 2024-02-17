@@ -33,7 +33,7 @@ Idiom: Area Chart
 
 Link to Tableau Workbook[Monthly Funding Trends for Computer Software Startups in 2021](./assests/Tableau/Monthly%20Funding%20Trends%20for%20Computer%20Software%20Startups%20in%202021.twb)
 
-## Area chart
+## Scatter Plot
 
 ### Data
 
